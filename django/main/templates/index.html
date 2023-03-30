@@ -1,0 +1,337 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './static/stylen.css' %}">
+    <link rel="stylesheet" href="{% static './static/animation.css' %}">
+    <link rel="stylesheet" href="{% static './static/test.css' %}">
+    <link rel="stylesheet" href="{% static './static/cards.css' %}">
+    <link rel="stylesheet" href="{% static './static/finish.css' %}">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{% static './images/logo2.png' %}" width="120px" alt="loading...">
+        </div>
+        <div class="navbar ">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">BOOK APPOINTMENT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact Us</a>
+                </li>
+                
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    {% comment %} </div class="signup">
+    <!-- Button trigger modal -->
+    <button type="button" id="signupw" class="btns">
+        <a id="idsign" class="colorhover" href="{%static 'signup.html'%}">SIGN UP</a>
+    </button> {% endcomment %}
+    </div>
+</nav>
+
+<div class="containerx animate__animated animate__fadeIn">
+    <div class="backscore animate__animated ">
+        <img src="{% static './images/slider1.jpg ' %}" width="100%" alt="loading...">
+    </div>
+    <div class="background" id="anime">
+
+        <div class="ani animate__animated animate__fadeInDown">
+            <div class="wrapper">
+                <div class="static-txt">We Are :  </div>
+                <div>
+                    <ul class="dynamic-txt">
+                        <li class="list"><span class="ttxt">............</span></li>
+                        <li class="list"><span class="ttxt">HEALER</span></li>
+                        <li class="list"><span class="ttxt">HELPER</span></li>
+                        <li class="list"><span class="ttxt">QURABLE</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content animate__animated animate__fadeInLeft">
+            <p>create a life that looks good on the inside, nor one that just looks good on the outside.</p>
+        </div>
+        
+    </div>
+</div>
+<div class="head-container ">
+    <div class="pri-container">
+        <div class="pri-img">
+            <img src="{% static './images/best-psychiatrists.jpg ' %}" alt="">
+        </div>
+        <div class="pri-content">
+
+            <h1 class="pri-title">
+                Welcome To Psychological care</h1>
+            <p class="pri-subtitle">
+                Top level physiotherapy professional, evidenced based treatment. We diagnose the cause and provide
+                you
+                with
+                the best possible treatment.
+                </p>
+        </div>
+
+        <button class="continue-application">
+            <div>
+                <div class="pencil"></div>
+                <div class="folder">
+                    <div class="top">
+                        <svg viewBox="0 0 24 27">
+                            <path
+                                d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.7020058523.7892863,9.21071368 
+                                23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 
+                                C20,26.5522847 19.5522847,27 19,27 L1,27 
+                                C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="paper"></div>
+                </div>
+            </div>
+            Book Appointment
+        </button>
+
+    </div>
+    <div class="sec-container">
+        <h1 class="sec-title">
+            Services from our best Psychiatrists</h1>
+        <div class="first-row">
+            <div class="f-row"><a href="parent2"><img src="{% static './images/myselfimg.png'%}" alt=""></a>myself</div>
+            <div class="f-row"><a href="parent1"><img src="{% static './images/parentingimg.png'%}" onclick="mmf1()" alt=""></a>Parenting</div>
+        </div>
+        <div class="secondary-row">
+            <div class="s-row"><a href="parent3"><img src="{% static './images/teenimg.png'%}" onclick="mmf3()" alt=""></a>Teen</div>
+            <div class="s-row"><a href="parent4"><img src="{% static './images/coupleimg.png'%}" onclick="mmf4()" alt=""></a>Couple</div>
+
+        </div>
+    </div>
+</div>
+<!-- ---------------second page end------------ -->
+    <!-- --------------service------------ -->
+    <section class="service" id="ser">
+        <div class="container describe" id="serhead">
+            <h2 class="title"><br>FIND THE BEST THERAPIST FOR YOU</h2>
+        </div>
+    </section>
+    <div class="cardsallign ">
+        <div class="cards animate__animated animate__fadeInUp ">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy1.jpeg' %}" onclick="myfunc1()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>Therapy for Anxiety</h2>
+                <h6 id="ch6"><br>With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife,
+                    Thailand truly has a chaotic charm to it that attracts people from across the globe.
+                    The country, also referred to as the Land of Smiles, never disappoints.
+                    So let's check out some of the best places to visit in Thailand.</h6>
+            </div>
+        </div>
+        <div class="cards  animate__animated animate__fadeInUp">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy2.jpeg'%}" onclick="myfunc2()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>Therapy for OCD</h2>
+                <h6 id="ch6">The Maldives is famous for a number of reasons, including its vibrant culture,
+                    pristine beaches, sprawling greenery, and fascinating landmarks.
+                    Apart from the numerous enchanting landmarks, Maldives is also famous for
+                    water sports and other adventure activities.</h6>
+            </div>
+        </div>
+        <div class="cards animate__animated animate__fadeInUp" id="card">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy3.jpeg'%}" onclick="myfunc3()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>Therapy for Breakup</h2>
+                <h6 id="ch6">June, July and August are the best months to go to Norway for warmer
+                    temperatures and longer days. The warmest month in Norway is July,
+                    when there's the fabled midnight sun ideal for hiking,
+                    cycling, kayaking and berry picking</h6>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="cardsallign">
+        <div class="cards animate__animated animate__fadeInUp">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy4.jpeg'%}" onclick="myfunc4()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>Therapy for Depresion</h2>
+                <h6 id="ch6">With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife,
+                    Thailand truly has a chaotic charm to it that attracts people from across the globe.
+                    The country, also referred to as the Land of Smiles, never disappoints.
+                    So let's check out some of the best places to visit in Thailand.</h6>
+            </div>
+        </div>
+        <div class="cards animate__animated animate__fadeInUp">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy5.jpeg'%}" onclick="myfunc5()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>sleeping Disorder</h2>
+                <h6 id="ch6">The Maldives is famous for a number of reasons, including its vibrant culture,
+                    pristine beaches, sprawling greenery, and fascinating landmarks.
+                    Apart from the numerous enchanting landmarks, Maldives is also famous for
+                    water sports and other adventure activities.</h6>
+            </div>
+        </div>
+        <div class="cards animate__animated animate__fadeInUp" id="card">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy6.jpeg'%}" onclick="myfunc6()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"> <br>Therapy for stress</h2>
+                <h6 id="ch6">June, July and August are the best months to go to Norway for warmer
+                    temperatures and longer days. The warmest month in Norway is July,
+                    when there's the fabled midnight sun ideal for hiking,
+                    cycling, kayaking and berry picking</h6>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="cardsallign">
+        <div class="cards animate__animated animate__fadeInUp">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy7.jpeg'%} " onclick="myfunc7()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>Therapy for Bullying</h2>
+                <h6 id="ch6">With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife,
+                    Thailand truly has a chaotic charm to it that attracts people from across the globe.
+                    The country, also referred to as the Land of Smiles, never disappoints.
+                    So let's check out some of the best places to visit in Thailand.</h6>
+            </div>
+        </div>
+        <div class="cards animate__animated animate__fadeInUp">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy8.jpeg'%}" onclick="myfunc8()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>Therapy for ADHD</h2>
+                <h6 id="ch6"> <br> The Maldives is famous for a number of reasons, including its vibrant culture,
+                    pristine beaches, sprawling greenery, and fascinating landmarks.
+                    Apart from the numerous enchanting landmarks, Maldives is also famous for
+                    water sports and other adventure activities.</h6>
+            </div>
+        </div>
+        <div class="cards animate__animated animate__fadeInUp" id="card">
+            <div class="thumbnail">
+                <img src="{% static './images/therapy9.jpeg'%}" onclick="myfunc9()"
+                    width="100%" alt="loading ...">
+            </div>
+            <div class="points">
+                <h2 id="ch2"><br>Therapy for Mental Health</h2>
+                <h6 id="ch6">June, July and August are the best months to go to Norway for warmer
+                    temperatures and longer days. The warmest month in Norway is July,
+                    when there's the fabled midnight sun ideal for hiking,
+                    cycling, kayaking and berry picking</h6>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yy8e4sw70ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290533.2647578039!2d75.60947208819!3d27.030884548292978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc9763e6030f1%3A0x4137675e5cf54360!2sJECRC%20Foundation!5e0!3m2!1sen!2sin!4v1669315348673!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+</body>
+<script>
+    function mmf1(){
+        window.location.href='parent1';
+    }
+    function mmf2(){
+        window.location.href='parent2';
+    }
+    function mmf3(){
+        window.location.href='parent3';
+    }
+    function mmf4(){
+        window.location.href='parent4';
+    }
+    function myfunc1(){
+        window.location.href='inside1';
+    }
+    function myfunc2(){
+        window.location.href='inside2';
+    }
+    function myfunc3(){
+        window.location.href='inside3';
+    }
+    function myfunc4(){
+        window.location.href='inside4';
+    }
+    function myfunc5(){
+        window.location.href='inside5';
+    }
+    function myfunc6(){
+        window.location.href='inside6';
+    }
+    function myfunc7(){
+        window.location.href='inside7';
+    }
+    function myfunc8(){
+        window.location.href='inside8';
+    }
+    function myfunc9(){
+        window.location.href='inside9';
+    }
+    function myname1(){
+        window.location.href="./inside_parenting3.html";
+    }
+    function myname2(){
+        window.location.href="/inside_parenting2.html";
+    }
+    function myname3(){
+        window.location.href="./inside_parenting3.html";
+    }
+    function myname4(){
+        window.location.href="./inside_parenting3.html";
+    }
+</script>
+<script src="{% static './static/scriptmain.js'%}"></script>
+<script src="{% static './static/uurl.js'%}"></script>
+</html>
+{% endblock %}
